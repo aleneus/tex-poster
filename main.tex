@@ -1,21 +1,30 @@
 \documentclass[final]{beamer}
-\usetheme{Boadilla}
+%\usetheme{Boadilla}
+\usetheme{Frankfurt}
 
 \usepackage[english, russian]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsthm, amssymb, latexsym}
 \usefonttheme[onlymath]{serif}
 \boldmath
-\usepackage[orientation=portrait,size=a0,debug]{beamerposter}
+\usepackage[orientation=landscape,size=a0,debug]{beamerposter}
 
-\title[Poster Template]{Porter template with beamerposter package}
+\title[Poster Template]{Poster template with beamerposter package}
 \author[Authors]{Author and Author and Author}
 \institute[NArFU]{Northern (Arctic) Federal University}
 \date{Date}
 
 \begin{document} \begin{frame}{} 
-
+\begin{beamercolorbox}{}
 \maketitle
+\end{beamercolorbox}
+
+\begin{columns}[t]
+
+\begin{column}[t]{0.32\linewidth}
+
+Text block
+\bigskip
 
 \begin{block}{\large Block 1}
 Block 1 content
@@ -26,5 +35,43 @@ Block 1 content
 Block 2 content
 \end{block}
 \bigskip
+
+\end{column}
+
+\begin{column}[t]{0.32\linewidth}
+
+\begin{block}{\large Block 3}
+Block 3 content
+\end{block}
+\bigskip
+
+Text block
+\bigskip
+
+\begin{block}{\large Block 4}
+Block 4 content
+\end{block}
+\bigskip
+
+\end{column}
+
+\begin{column}[t]{0.32\linewidth}
+
+\begin{block}{\large Block 5}
+Block 5 content
+\end{block}
+\bigskip
+
+\begin{block}{\large Block 6}
+Block 6 content
+\end{block}
+\bigskip
+
+Text block
+\bigskip
+
+\end{column}
+
+\end{columns}
 
 \end{frame} \end{document}
