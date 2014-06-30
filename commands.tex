@@ -40,3 +40,25 @@
 #1
 \bigskip
 }
+
+% Insert picture to text. 
+\newcommand\myPic[2]{
+\begin{center}
+\includegraphics[scale=#1]{#2}
+\end{center}
+}
+
+% Lists
+% Marked
+\newcommand\myList[1]{
+\begin{itemize}
+#1
+\end{itemize}
+}
+
+% Enumerated
+\newcommand\myListn[1]{
+\begin{enumerate}
+#1
+\end{enumerate}
+}
