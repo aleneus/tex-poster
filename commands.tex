@@ -1,3 +1,32 @@
+% Columns
+
+% Two
+\newcommand{\myTwoColumns}[4]{
+\begin{columns}[t]
+\begin{column}[t]{#1\linewidth}
+#3
+\end{column}
+\begin{column}[t]{#2\linewidth}
+#4
+\end{column}
+\end{columns}
+}
+
+% Three
+\newcommand{\myThreeColumns}[6]{
+\begin{columns}[t]
+\begin{column}[t]{#1\linewidth}
+#4
+\end{column}
+\begin{column}[t]{#2\linewidth}
+#5
+\end{column}
+\begin{column}[t]{#3\linewidth}
+#6
+\end{column}
+\end{columns}
+}
+
 % Box with title and text
 \newcommand{\myBox}[2]{
 \bigskip
