@@ -28,25 +28,37 @@
 }
 
 % Box with title and text
-\newcommand{\myBox}[2]{
+
+% usual
+\newcommand{\myBlock}[2]{
 \bigskip
 \begin{block}{\large #1}
 #2
 \end{block}
 }
 
+% alert
+\newcommand{\myAlertBlock}[2]{
+\bigskip
+\begin{alertblock}{\large #1}
+#2
+\end{alertblock}
+}
+
 % Text block
-\newcommand{\myText}[1]{
+\newcommand{\myTextBlock}[1]{
 \bigskip
 
 #1
 }
 
 % Insert picture to text. 
-\newcommand\myPic[2]{
-\begin{center}
-\includegraphics[scale=#1]{#2}
-\end{center}
+\newcommand{\myPic}[3]{
+\begin{figure}[H]
+\centering\par\bigskip \includegraphics[scale=#2]{#3}
+\caption{#1}
+\label{#3}
+\end{figure}
 }
 
 % Lists
