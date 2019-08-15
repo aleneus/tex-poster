@@ -10,22 +10,39 @@
 \usefonttheme[onlymath]{serif}
 \boldmath
 \usepackage[orientation=landscape,size=a1,debug]{beamerposter}
+\usetheme{default}
+\usecolortheme{default}
+
 
 \title[Poster Template]{Poster template with beamerposter package}
-\author[Authors]{Author and Author and Author}
-\institute[NArFU]{Northern (Arctic) Federal University}
+
+\author[A1, A2, A3]{Author 1\inst{1}, Author 2\inst{2}, Author 3\inst{1, 2}}
+\institute[Org1, Org2]{
+  \inst{1}%
+  Some organization
+  \\
+  \inst{2}%
+  Another organization
+}
+% \author[Authors]{Author and Author and Author}
+% \institute[NArFU]{Northern (Arctic) Federal University}
+
 \date{Date}
+
 
 \input{commands}
 
 \begin{document}
 \begin{frame}{}
 
-\begin{beamercolorbox}{}
-\maketitle
-\end{beamercolorbox}
+  \begin{beamercolorbox}{}
+    {\bfseries \Huge LOGO1}
+    \hfill
+    {\bfseries \Huge LOGO2}
+    \maketitle
+  \end{beamercolorbox}
 
-\input{content}
+  \input{content}
 
 \end{frame}
 \end{document}

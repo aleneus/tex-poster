@@ -1,64 +1,79 @@
-% Columns
-
-% Two
+% Two columns
 \newcommand{\myTwoColumns}[4]{
-\begin{columns}[t]
-\begin{column}[t]{#1\linewidth}
-#3
-\end{column}
-\begin{column}[t]{#2\linewidth}
-#4
-\end{column}
-\end{columns}
+  \begin{columns}[t]
+    \begin{column}[t]{#1\linewidth}
+      #3
+    \end{column}
+    \begin{column}[t]{#2\linewidth}
+      #4
+    \end{column}
+  \end{columns}
 }
 
-% Three
+% Three columns
 \newcommand{\myThreeColumns}[6]{
-\begin{columns}[t]
-\begin{column}[t]{#1\linewidth}
-#4
-\end{column}
-\begin{column}[t]{#2\linewidth}
-#5
-\end{column}
-\begin{column}[t]{#3\linewidth}
-#6
-\end{column}
-\end{columns}
+  \begin{columns}[t]
+    \begin{column}[t]{#1\linewidth}
+      #4
+    \end{column}
+    \begin{column}[t]{#2\linewidth}
+      #5
+    \end{column}
+    \begin{column}[t]{#3\linewidth}
+      #6
+    \end{column}
+  \end{columns}
 }
 
 % Box with title and text
 \newcommand{\myBox}[2]{
-\bigskip
-\begin{block}{\large #1}
-#2
-\end{block}
+  \bigskip
+  \begin{block}{\large \bfseries #1}
+    #2
+  \end{block}
 }
 
 % Text block
 \newcommand{\myText}[1]{
-#1
-\bigskip
+  \bigskip
+  #1
 }
 
 % Insert picture to text. 
 \newcommand\myPic[2]{
-\begin{center}
-\includegraphics[scale=#1]{#2}
-\end{center}
+  \begin{center}
+    \includegraphics[scale=#1]{#2}
+  \end{center}
 }
 
 % Lists
 % Marked
 \newcommand\myList[1]{
-\begin{itemize}
-#1
-\end{itemize}
+  \begin{itemize}
+    #1
+  \end{itemize}
 }
 
 % Enumerated
 \newcommand\myListn[1]{
-\begin{enumerate}
-#1
-\end{enumerate}
+  \begin{enumerate}
+    #1
+  \end{enumerate}
+}
+
+% Section
+\newcounter{sectionnum}
+\setcounter{sectionnum}{0}
+
+\newcommand\mySection[1]{
+  \addtocounter{sectionnum}{1}
+  {
+    \Large
+    \color{structure}
+
+    \par\bigskip
+    \par\bigskip
+    \bfseries
+    \arabic{sectionnum}. #1
+  }
 }
